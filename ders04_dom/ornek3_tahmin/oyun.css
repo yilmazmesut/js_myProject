@@ -3,25 +3,30 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /*eğer bunu kullanırsanız, padding değeri kutunun genişliğine ilave olarak eklenmez ve kutunun genişliği sabit kalır. */
+}
+
+header {
+  position: relative; /*Elementler normal konumunda bulunuyor fakat eğer biz istersek o elementi bulunduğu konuma göre farklı bir pozisyona götürebiliyoruz.*/
+  height: 300px;
+  border-bottom: 7px solid #eee;
+}
+
+h1 {
+  /* header parent ona position relative, child ı olan h1 e de absolute vererek parent ına göre yerleştirmiş oluyoruz, yani ortala dersek parentın içinde ortala*/
+  position: absolute; /*bu olmazsa sol üst köşeye yapışır. Elemente direk pozisyon verebiliyoruz. Relative'de olduğu gibi eski bulunduğu konuma göre HAREKET ETMİYOR.. Direk bizden aldığı pozisyon değerlerine göre hareket ediyor. Poziyonu belirlerken bir üstteki RELATİVE elemente göre konum alıyor. Eğer bu elementin PARENT(bir üstteki element) elementi RELATİVE değilse, o zaman BODY'ye göre hareket eder.*/
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*yazılan şey 0 px li olsaydı buna gerek yoktu, h1 e ayrılan alanda yüzde elli yazı girsin ve bu alanda yazı tam ortada bulunsun*/
 }
 
 body {
   color: white;
   background-color: #2d3436;
   font-family: "Press Start 2P";
-}
-header {
-  position: relative;
-  height: 300px;
-  border-bottom: 7px solid #eee;
-}
-
-h1 {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 50%;
 }
 
 .aralik {
