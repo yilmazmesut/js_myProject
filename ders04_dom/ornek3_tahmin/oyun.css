@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: #2d3436;
+  font-family: "Press Start 2P";
+}
+header {
+  position: relative;
+  height: 300px;
+  border-bottom: 7px solid #eee;
+}
+
+h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+}
+
+.aralik {
+  position: absolute;
+  right: 15%;
+  top: 20px;
+}
+
+.btn {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 30px;
+  font-family: inherit; /*buton disindalilerin font-family'leri neyse onun aynisini inherit al*/
+  padding: 20px 25px;
+  cursor: pointer; /*uzerine gelindiginde el isaretine donusuyor*/
+  background-color: #eee;
+}
+
+.question {
+  position: absolute;
+  left: 50%;
+  width: 180px;
+  background-color: #eee;
+  color: #333;
+  bottom: 0%;
+  font-size: 60px;
+  padding: 25px;
+  text-align: center;
+  transform: translate(-50%, 50%);
+}
