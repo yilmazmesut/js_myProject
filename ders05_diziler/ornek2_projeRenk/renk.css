@@ -1,0 +1,21 @@
+.konteynir {
+  /*border: 1px solid red; */ /* alani gormek icin border ekledik*/
+  width: 100vw;
+  height: 100vh;
+  /*wiewport verince tarayıcı alanını (hepsine uygun crome, explorer vs) yüzde yüz alıp güzelce ortalar. 
+  100%versekte olur, o sıfıra sıfır ekranı kaplar, bütün border a görebiliriz */
+  display: flex;
+  justify-content: center; /* yatayda ortaladi */
+  align-items: center; /* dikeyde ortaladi */
+  flex-direction: column; /* alt alta siraladik */
+}
+
+.btn {
+  padding: 20px;
+  background-color: bisque;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(224, 187, 140);
+}
